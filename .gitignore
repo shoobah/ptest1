@@ -11,6 +11,9 @@ nupkg/
 # Rider
 .idea
 
+#Java
+.class
+
 # User-specific files
 *.suo
 *.user
