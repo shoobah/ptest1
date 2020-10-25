@@ -3,7 +3,7 @@ public class natlog {
         // set the start values
         double eNew = 1, eOld = 0;
         int factorial = 1, n = 1;
-        // do the things in { } until the statement in the while(...) is true
+        // do the things in { } until the statement in the while(...) is false
         do {
             factorial *= n++; //multiply factorial with n then increase n by 1
             eOld = eNew; // store eNew value in eOld to use for comparison in the while statement below
