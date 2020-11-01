@@ -21,8 +21,8 @@ public class Loops {
                 System.out.println("Invalid height or width value");
         } while (true);
 
-        for (int h = 0; h < givenH; h++) {
-            for (int w = 0; w < givenW; w++) {
+        for (int height = 0; height < givenH; height++) {
+            for (int width = 0; width < givenW; width++) {
                 System.out.print("X");
             }
             System.out.println("");
