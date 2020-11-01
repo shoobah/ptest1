@@ -1,31 +1,31 @@
 import java.util.Scanner;
 
 public class Loops {
+
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
-        int height = 0;
-        int width = 0;
+        int givenH = 0;
+        int givenW = 0;
 
         do {
-            System.out.print("Type in the heigh: ");
-            height = reader.nextInt();
-            System.out.print("Type in the width: ");
-            width = reader.nextInt();
+            System.out.println("Type in the height: ");
+            givenH = reader.nextInt();
 
-            if (height > 0 && width > 0) {
+            System.out.println("Type in the width: ");
+            givenW = reader.nextInt();
+
+            if (givenH >= 1 || givenW >= 1)
                 break;
-            } else {
+            else
                 System.out.println("Invalid height or width value");
-            }
         } while (true);
 
-        for (int h = 0; h < height; h++) {
-            for (int w = 0; w < width; w++) {
+        for (int h = 0; h < givenH; h++) {
+            for (int w = 0; w < givenW; w++) {
                 System.out.print("X");
             }
             System.out.println("");
         }
-        reader.close();
     }
 }
